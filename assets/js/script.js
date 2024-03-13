@@ -30,9 +30,9 @@ const arrayDental = [
 
 let radiologia = document.getElementById("radiologia");
 
-radiologia.innerHTML = `<p> Primera atención : ${arrayRadiologia[0].paciente} - ${arrayRadiologia[0].prevision} | Última atención : Última atención : ${arrayRadiologia[arrayRadiologia.length - 1].paciente} - ${arrayRadiologia[arrayRadiologia.length - 1].prevision}</p>`;
+radiologia.innerHTML = `<p> Primera atención : ${arrayRadiologia[0].paciente} - ${arrayRadiologia[0].prevision} | Última atención : Última atención : ${arrayRadiologia[arrayRadiologia.length - 1].paciente} - ${arrayRadiologia[arrayRadiologia.length - 1].prevision}</p> ${radiologia.innerHTML}` ;
 
-radiologia.innerHTML = `<h1> Radiología </h1>` + radiologia.innerHTML + `<table id="listado-radiologia" class="table table-primary table-striped "><thead><tr><th >Hora</th> <th >Especialista</th><th >Paciente</th> <th >Rut</th> <th >Previsión</th></tr></thead></table>`;
+radiologia.innerHTML = `<h1> Radiología </h1>` + radiologia.innerHTML ;
 
 let tablaRadiologia = document.getElementById('listado-radiologia');
 
@@ -52,9 +52,9 @@ tablaRadiologia.innerHTML += contenidoRadiologia + '</tbody>';
 
 let traumatologia = document.getElementById("traumatologia");
 
-traumatologia.innerHTML = `<p> Primera atención : ${arrayTraumatologia[0].paciente} - ${arrayTraumatologia[0].prevision} | Última atención : Última atención : ${arrayTraumatologia[arrayTraumatologia.length - 1].paciente} - ${arrayTraumatologia[arrayTraumatologia.length - 1].prevision}</p>`;
+traumatologia.innerHTML = `<p> Primera atención : ${arrayTraumatologia[0].paciente} - ${arrayTraumatologia[0].prevision} | Última atención : Última atención : ${arrayTraumatologia[arrayTraumatologia.length - 1].paciente} - ${arrayTraumatologia[arrayTraumatologia.length - 1].prevision}</p> ${traumatologia.innerHTML}`;
 
-traumatologia.innerHTML = `<h1> Traumatología </h1>` + traumatologia.innerHTML + `<table id="listado-traumatologia" class="table table-striped table-warning"><thead><tr><th >Hora</th><th >Especialista</th><th >Paciente</th><th >Rut</th><th >Previsión</th></tr></thead></table>`;
+traumatologia.innerHTML = `<h1> Traumatología </h1>` + traumatologia.innerHTML;
 
 let tablaTrauma = document.getElementById('listado-traumatologia');
 let contenidoTrauma = '<tbody>';
@@ -72,9 +72,9 @@ tablaTrauma.innerHTML += contenidoTrauma + '</tbody>';
 
 let dental = document.getElementById("dental");
 
-dental.innerHTML = `<p> Primera atención : ${arrayDental[0].paciente} - ${arrayDental[0].prevision} | Última atención : Última atención : ${arrayDental[arrayDental.length - 1].paciente} - ${arrayDental[arrayDental.length - 1].prevision}</p>`;
+dental.innerHTML = `<p> Primera atención : ${arrayDental[0].paciente} - ${arrayDental[0].prevision} | Última atención : Última atención : ${arrayDental[arrayDental.length - 1].paciente} - ${arrayDental[arrayDental.length - 1].prevision}</p> ${dental.innerHTML}`;
 
-dental.innerHTML = `<h1> Dental </h1>` + dental.innerHTML + ` <table id="listado-dental" class="table table-danger table-striped "><thead><tr><th >Hora</th><th >Especialista</th><th >Paciente</th><th >Rut</th><th >Previsión</th></tr></thead></table>`;
+dental.innerHTML = `<h1> Dental </h1>` + dental.innerHTML;
 
 let tablaDental = document.getElementById('listado-dental');
 let contenidoDental = '<tbody>';
